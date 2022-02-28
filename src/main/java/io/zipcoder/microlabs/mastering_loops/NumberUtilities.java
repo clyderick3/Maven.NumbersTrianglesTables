@@ -29,24 +29,33 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        return null;
+        return NumberUtilities.getExponentiations(start,stop,step,2);
+        //return null;
     }
 
-    public static String getRange(int start) {
-        return null;
+    public static String getRange(int stop) {
+        return NumberUtilities.getRange(0,stop, 1);
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+       return NumberUtilities.getRange(start, stop, 1);
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String result = "";
+        for (int i = start; i<stop; i = i + step) {
+            result += i;
+        }
+        return result;
     }
 
 
-    public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+    public static String getExponentiations(int start, int stop, int step, int exponent)
+    { String result = "";
+        for (int i = start; i<stop; i = i + step) {
+            result = result + Math.round(Math.pow(i,exponent));
+        }
+        return result;
     }
 }
