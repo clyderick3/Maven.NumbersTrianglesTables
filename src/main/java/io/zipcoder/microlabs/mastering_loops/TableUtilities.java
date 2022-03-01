@@ -10,6 +10,16 @@ public class TableUtilities {
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        return null;
+        String result = "";
+        for (int i = 1; i <= tableSize; i++) {
+            for (int j = 1; j <= tableSize; j++) {
+               System.out.print(i * j);
+result = String.format(%4d,)
+            }
+        }
+        return result;
+
     }
 }
+
+
